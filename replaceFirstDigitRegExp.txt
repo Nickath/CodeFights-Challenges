@@ -1,0 +1,11 @@
+/*
+
+The algorithm must replace the first digit in a string with '#' character.
+
+It's guaranteed that the input string contains at least one digit.
+
+Example
+
+For input = "There are 12 points", the output should be
+replaceFirstDigitRegExp(input) = "There are #2 points".
+*/

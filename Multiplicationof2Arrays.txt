@@ -1,0 +1,19 @@
+/*
+Implement an algorithm to multiply two matrices.
+
+Example
+
+For
+
+matrix1 = [[1, 1, 1],
+           [0, 0, 0]]
+and
+
+matrix2 = [[2, 1],
+           [1, 2],
+           [2, 1]]
+the output should be
+
+matrixMultiplication(matrix1, matrix2) = [[5, 4],
+                                          [0, 0]]
+*/

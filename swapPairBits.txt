@@ -1,0 +1,8 @@
+Given a non-negative integer k, convert it to binary, swap the bits at positions p1 and p2 counting from the right, and return the obtained number in base 10.
+
+Example
+
+For k = 565, p1 = 9 and p2 = 3, the output should be
+swapPairBits(k, p1, p2) = 817.
+
+k2 = 1000110101 (Here, p1 is colored red and p2 is colored blue.) With p1 and p2 swapped, k becomes 1100110001, which is 81710. Thus, the final answer is 817.

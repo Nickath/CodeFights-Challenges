@@ -1,0 +1,8 @@
+/*
+Find the sum of all integers that occur in the string.
+
+Example
+
+For inputString = "2 apples, 12 oranges", the output should be
+sumUpNumbers(inputString) = 14.
+*/

@@ -1,0 +1,9 @@
+You created an awesome array a, but some hooligan removed one element from it, shuffled it and returned it to you as array b.
+
+Given arrays a and b, your task is to figure out what element was removed from a.
+
+Example
+
+For a =[1, 2, 3, 4] and b = [3, 1, 2],
+the output should be
+findOnlyDiffChar(a, b) = 4.

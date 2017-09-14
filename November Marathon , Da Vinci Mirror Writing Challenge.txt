@@ -1,0 +1,42 @@
+/*
+You've recently learned that most of Leonardo da Vinci's writings are in mirror-image cursive.
+
+
+
+Amazed at the idea, you decided to try something similar. Since you would like to apply Leonardo's approach to typing, you cannot reproduce it completely because there are no mirrored letters on your keyboard. Instead, you just type characters of a phrase in reverse order starting from the last one. For example, what should have been "the first example" now becomes "elpmaxe tsrif eht".
+
+At first you hoped that this simple trick will help you to keep your notes in secret. However, you soon realized that it doesn't work well for texts containing words starting with capital letters: when updated, such texts contain words ending with capital letters that do help to guess the encryption method used. Therefore, you decided to improve the approach as follows: if a word starts with a capital letter, you make it lowercase and convert the last letter of that word into uppercase instead. Thus, in the "mirrored" form the words would contain uppercase letters only in the first position when read from left to right.
+
+Given a text, your task is to encrypt it using your improved Leonardo's approach.
+
+Example
+
+For text = "Leonardo da  Vinci", the output should be
+gnitirWrorriM(text) = "Icniv  ad Odranoel".
+*/
+
+
+
+String gnitirWrorriM(String text) {
+    String words[] = text.split(" ");
+    String res = "";
+    for(int i=words.length-1;i>=0;i--){
+        if(!res.equals("")){
+            res+=" ";
+        }
+        if(words[i].length()==0){
+            continue;
+        }
+        char start = words[i].charAt(0);
+        if(start >= 'A' && start <= 'Z'){
+            words[i] = words[i].toLowerCase();
+            char last = words[i].charAt(words[i].length()-1);
+            if(last >= 'a' && last <= 'z') last-= 'a'-'A';
+            words[i] = words[i].substring(0,words[i].length()-1)+last;
+        }
+        for(int j=words[i].length()-1;j>=0;j--){
+            res+=words[i].charAt(j);
+        }
+    }
+    return res;
+}

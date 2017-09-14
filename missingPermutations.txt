@@ -1,0 +1,20 @@
+Given a list containing permutations of a set of characters, list all of the missing permutations in lexicographical order.
+
+There can be multiple occurrences of the same permutation in the input. In the output, however, all of the permutations need to be unique.
+
+Examples
+
+For permutationList=["ab"], the output should be
+missingPermutations(permutationList) = ["ba"].
+
+There are 2 permutations of 'a' and 'b': "ab" and "ba". The only permutation missing from the input is "ba".
+
+For permutationList=["bca", "bac", "acb"], the output should be
+missingPermutations(permutationList) = ["abc", "cab", "cba"].
+
+There are 6 permutations of 'a', 'b', and 'c'. The missing permutations, sorted lexicographically, are "abc", "cab" and "cba".
+
+For permutationList=["a"], the output should be
+missingPermutations(permutationList) = [].
+
+The result is empty since "a" is the only permutation of the set of letters consisting of a single letter 'a'.

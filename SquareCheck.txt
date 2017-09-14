@@ -1,0 +1,15 @@
+/*
+You are given 4 points on a Cartesian plane. Return true if these points form a square, and false otherwise.
+
+Example
+
+For
+
+points = [0, 0, 
+          0, 3,
+          3, 3, 
+          3, 0]
+the output should be
+Square_Check(points) = true.
+*/
+

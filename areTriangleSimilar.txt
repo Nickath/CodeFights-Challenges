@@ -1,0 +1,43 @@
+You have two triangles A1B1C1 and A2B2C2 on a plane. Your task is to determine whether they are rather similar, i.e. if their corresponding angles have the same measurements.
+
+In order for two triangles to be rather similar, the following equations must be true:
+
+angle(A1B1, B1C1) = angle(A2B2, B2C2)
+angle(A1C1, C1B1) = angle(A2C2, C2B2)
+angle(B1A1, A1C1) = angle(B2A2, A2C2)
+where angle(AB, CD) refers to an angle between segments AB and CD in the triangle.
+Example
+
+For coordinates = [0, 0, 0, 1, 1, 0, 0, 0, 0, -3, -3, 0], the output should be
+areTrianglesSimilar(coordinates) = true.
+
+
+
+Both triangles have pairwise equal angles: 90, 45, and 45 degrees.
+
+For coordinates = [0, 0, 0, 1, 1, 0, 0, 0, 0, -4, -2, 0], the output should be
+areTrianglesSimilar(coordinates) = false.
+
+
+
+The first triangle's angles are 90, 45, and 45 degrees, while the second triangle's angles are 90, 60, and 30 degrees.
+
+For coordinates = [0, 0, 0, 1, 1, 0, -3, 0, 0, -3, 0, 0], the output should be
+areTrianglesSimilar(coordinates) = false.
+
+
+
+Both triangles have the same sets of degrees, but they are in different order.
+
+Input/Output
+
+[time limit] 3000ms (java)
+[input] array.integer coordinates
+
+An array of triangle coordinates. The first 6 elements represent vertices of the first triangle A1B1C1 (coordinates[0] corresponds to the x-coordinate of A1, coordinates[1] to the y-coordinate of A1, etc.). The next 6 elements represent vertices of the second triangle in the same format.
+
+It is guaranteed that the triangles are not degenerate.
+
+Constraints:
+coordinates.length = 12,
+-100 = coordinates[i] = 100.
